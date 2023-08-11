@@ -4,7 +4,11 @@ This is a medical bot built using Llama2 and Sentence Transformers. The bot is p
 ## Create Virtual Environment
 
 ```
-python3 -m venv venv
+conda -V
+```
+
+```
+
 ```
 
 ## Upgrade Pip (Package Manager)
@@ -22,7 +26,7 @@ python -m  pip install -r requirements.txt
 ## Store/Update embeddings
 
 ```
-python -m ingest.py
+python -m ingest
 ```
 
 ## Load embeddings & run chatbot
