@@ -10,7 +10,7 @@ python3 -m venv venv
 ## Upgrade Pip (Package Manager)
 
 ```
-python -m pip install —upgrade pip
+python -m pip install --upgrade pip
 ```
 
 ## Install packages
