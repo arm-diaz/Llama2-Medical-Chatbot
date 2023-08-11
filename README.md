@@ -10,19 +10,19 @@ python3 -m venv venv
 ## Upgrade Pip (Package Manager)
 
 ```
-pip install --upgrade pip
+python -m pip install —upgrade pip
 ```
 
 ## Install packages
 
 ```
-pip install -r requirements.txt
+python -m  pip install -r requirements.txt
 ```
 
-## Store embeddings
+## Store/Update embeddings
 
 ```
-python3 ingest.py
+python -m ingest.py
 ```
 
 ## Load embeddings & run chatbot
@@ -30,3 +30,24 @@ python3 ingest.py
 ```
 chainlit run model.py -w
 ```
+
+How a Doctor would diagnose Eczema?
+
+
+
+lsof -i TCP:8000 | grep LISTEN
+
+pip install urllib3==1.26.6
+
+
+https://stackoverflow.com/questions/76187256/importerror-urllib3-v2-0-only-supports-openssl-1-1-1-currently-the-ssl-modu
+
+ NotOpenSSLWarning: urllib3 v2.0 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+
+  warn("The installed version of bitsandbytes was compiled without GPU support. "
+'NoneType' object has no attribute 'cadam32bit_grad_fp32'
+
+ been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+        - Avoid using `tokenizers` before the fork if possible
+        - Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
